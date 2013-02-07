@@ -1,0 +1,37 @@
+.header {
+    background-color: #499249;
+    height: 200px;
+}
+
+.content {
+    height: 500px;
+    background-color: green;
+}
+
+.footer {
+    height: 200px;
+}
+
+.widget-area {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  border-top: 1px solid lighten(@widgetBackground, 50%);
+}
+
+div:first-child > .widget-area {
+  margin-right: 20px;
+}
+
+div:last-child > .widget-area {
+  margin-left: 20px;
+}
+
+.widget {
+    padding: 20px;
+    margin-top: 20px;
+    height: 140px;
+    background-color: @widgetBackground;
+}
+
+

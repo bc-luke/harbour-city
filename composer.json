@@ -1,0 +1,14 @@
+{
+	"name": "harbour-city/theme",
+	"description": "The Harbour City Hoppers WordPress theme.",
+
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/twitter/bootstrap"
+		}
+	],
+	"require": {
+		"twitter/bootstrap": "2.2.*"
+	}
+}
