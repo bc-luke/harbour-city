@@ -13,47 +13,51 @@ and open the template in the editor.
     </head>
     <body>
         <div class="page container">
-            <div class="header">
+            <div class="row">
+                <div class="header span12">
                   <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
-                  <ul class="primary-menu" role="menu">
+                  <ul id="menu-primary" class="menu menu-horizontal menu-horizontal-separated pull-right" role="menu">
                     <li><a tabindex="-1" href="#">Action</a></li>
                     <li><a tabindex="-1" href="#">Another action</a></li>
                     <li><a tabindex="-1" href="#">Something else here</a></li>
                   </ul>
+                </div>
             </div>
-            <div class="content">
-                
+            <div class="row">
+                <div class="content span12"></div>
             </div>
-            <div class="footer row">
-                    <div class="span4">
-                        <ul id="widget-area-1" class="widget-area">
-                            <li class="widget">I'm a widget!</li>
-                        </ul>
+            <div class="row">
+                <div class="footer span12">
+                    <div class="row">
+                        <div class="span4">
+                            <ul id="widget-area-1" class="widget-area">
+                                <li class="widget">I'm a widget!</li>
+                            </ul>
+                        </div>
+                        <div class="span4">
+                            <ul id="widget-area-2" class="widget-area">
+                                <li class="widget">I'm a widget!</li>
+                            </ul>
+                        </div>
+                        <div class="span4">
+                            <ul id="widget-area-3" class="widget-area">
+                                <li class="widget">I'm a widget!</li>
+                            </ul>
+                        </div>
+                        <div class="offset6 span6">
+                            <ul id="menu-secondary" class="menu menu-horizontal pull-right" role="menu">
+                                <li>Privacy</li>
+
+                                <li>Terms of Use</li>
+
+                                <li>Sitemap</li>
+
+                                <li>Links</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="span4">
-                        <ul id="widget-area-2" class="widget-area">
-                            <li class="widget">I'm a widget!</li>
-                        </ul>
-                    </div>
-                    <div class="span4">
-                        <ul id="widget-area-3" class="widget-area">
-                            <li class="widget">I'm a widget!</li>
-                        </ul>
-                    </div>
-                    <div class="pull-right">
-                        <ul>
-                            <li>Privacy</li>
-                        </ul>
-                        <ul>
-                            <li>Terms of Use</li>
-                        </ul>
-                        <ul>
-                            <li>Sitemap</li>
-                        </ul>
-                        <ul>
-                            <li>Links</li>
-                        </ul>
-                    </div>
+
+                </div>
             </div>
         </div>
         <script src="http://code.jquery.com/jquery-latest.js"></script>
