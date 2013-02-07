@@ -7743,7 +7743,7 @@ a.badge:hover {
   }
 }
 .header {
-  background-color: #499249;
+  border: 1px solid #499249;
   height: 200px;
 }
 .content {
@@ -7773,12 +7773,25 @@ div:last-child > .widget-area {
 }
 .menu-horizontal li {
   display: inline-block;
+  float: left;
 }
-.menu-horizontal.menu-horizontal-separated li:after {
-  content: "|";
-  padding-right: 8px;
-  padding-left: 12px;
+.menu.menu-primary li {
+  /*&:after {
+                content: "|";
+                padding-right: @baseFontSize / 1.25px;
+                padding-left:@baseFontSize / 1.16px;
+            }
+
+            &:last-child:after {
+                content: "";
+            }*/
+
+  padding: 0 6px;
+  border-right: 1px solid white;
 }
-.menu-horizontal.menu-horizontal-separated li:last-child:after {
-  content: "";
+.menu.menu-primary a {
+  color: #ffffff;
+}
+.menu.menu-primary a:hover {
+  color: #ff8800;
 }

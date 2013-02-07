@@ -1,5 +1,5 @@
 .header {
-    background-color: #499249;
+    border: 1px solid #499249;
     height: 200px;
 }
 
@@ -34,23 +34,7 @@ div:last-child > .widget-area {
     background-color: @widgetBackground;
 }
 
-.menu-horizontal {
-    li {
-        display: inline-block;
-    }
+@import "menus";
 
-    &.menu-horizontal-separated {
-        li {
-            &:after {
-                content: "|";
-                padding-right:8px;
-                padding-left:12px;
-            }
 
-            &:last-child:after {
-                content: "";
-            }
-        }
-    }
-}
 
