@@ -7759,17 +7759,15 @@ a.badge:hover {
   padding: 0;
   padding-top: 5px;
 }
-div:first-child > .widget-area {
-  margin-right: 20px;
-}
-div:last-child > .widget-area {
-  margin-left: 20px;
-}
 .widget {
   padding: 20px;
   margin-top: 20px;
   height: 140px;
   background-color: #333333;
+  border-right: 1px solid #b3b3b3;
+}
+.widget:last-child {
+  border-right: none;
 }
 .menu-horizontal li {
   display: inline-block;
@@ -7787,7 +7785,7 @@ div:last-child > .widget-area {
             }*/
 
   padding: 0 6px;
-  border-right: 1px solid white;
+  border-right: 1px solid #ffffff;
 }
 .menu.menu-primary a {
   color: #ffffff;
