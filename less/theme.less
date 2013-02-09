@@ -1,6 +1,12 @@
+@import "scaffolding";
+
 .header {
     border: 1px solid #499249;
     height: 200px;
+
+    .logo {
+        max-width: 225px;
+    }
 }
 
 .content {
@@ -10,22 +16,21 @@
 
 .footer {
     height: 200px;
-    border-top: 1px solid lighten(@widgetBackground, 50%);
 }
 
-.widget-area {
-  margin: 0;
-  padding: 0;
-  padding-top: 5px;
+[role="contentinfo"] {
+    color:  @footerTextColor;
+    font-size: @fontSizeSmall;
+    font-weight: bold;
+    margin-top: @baseLineHeight * 1.5;
 }
 
-.widget {
-    padding: 20px;
-    margin-top: 20px;
-    height: 140px;
-    background-color: @widgetBackground;
-    border-right: 1px solid lighten(@widgetBackground, 50%);
+#support a {
+    text-decoration: underline;
 }
+
+
+@import "widgets";
 
 @import "menus";
 

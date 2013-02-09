@@ -1,21 +1,32 @@
+// Theme colors
+// -------------------------
+@blueTheme:                 #049cdb;
+@orangeTheme:               #efa800;
+@grayTheme:                 #3d3c3d;     
+
 // Scaffolding
 // -------------------------
 @bodyBackground:        @black;
 @textColor:             @white;
 
+// Footer
+// -------------------------
+@footerTextColor:       @grayTheme;
+
 // Links
 // -------------------------
-@linkColor:             @gray;
-@linkColorHover:        darken(@linkColor, 15%);
+@linkColor:             @grayTheme;
+@linkColorHover:        @linkColor;
 
 @primaryMenuLinkColor:         @white;
-@primaryMenuLinkColorHover:    #ff8800;
+@primaryMenuLinkColorHover:    @orangeTheme;
+@primaryMenuLinkColorCurrent:  @blueTheme;
 
 // Widgets
 // -------------------------
 
-@widgetBackground:      @grayDark;
-@widgetBorder:          @grayLight;
+@widgetHeight:          @baseLineHeight * 7;
+@widgetBorderColor:     @grayLight;
 
 // Dropdowns
 // -------------------------

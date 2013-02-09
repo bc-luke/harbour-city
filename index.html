@@ -15,6 +15,7 @@ and open the template in the editor.
         <div class="page container">
             <div class="row">
                 <div class="header span12">
+                  <a href="/"><img src="img/logo.png" class="logo logo-hch"></a>
                   <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
                   <ul id="menu-primary-1" class="menu menu-primary menu-horizontal pull-right" role="menu">
                     <li><a tabindex="-1" href="#">Action</a></li>
@@ -29,33 +30,23 @@ and open the template in the editor.
             <div class="row">
                 <div class="footer span12">
                     <div class="row">
-                        <div class="span4">
-                            <ul id="widget-area-1" class="widget-area">
-                                <li class="widget">I'm a widget!</li>
+                            <ul id="widget-area-footer" class="widget-area">
+                                <li class="widget span4">I'm a widget!</li> <!-- add span4 in register_sidebar call -->
+                                <li class="widget span4">I'm a widget!</li>
+                                <li class="widget span4">I'm a widget</li>
                             </ul>
-                        </div>
-                        <div class="span4">
-                            <ul id="widget-area-2" class="widget-area">
-                                <li class="widget">I'm a widget!</li>
-                            </ul>
-                        </div>
-                        <div class="span4">
-                            <ul id="widget-area-3" class="widget-area">
-                                <li class="widget">I'm a widget!</li>
-                            </ul>
-                        </div>
                     </div>
-                    <div class="row">
-                        <div class="offset6 span6">
+                    <div class="row" role="contentinfo">
+                        <span id="support" class="span4">Proudly supported by <a href="http://syd.swingpatrol.com/">Swing Patrol</a></span>
+                        <div class="offset2 span6">
                             <ul id="menu-secondary-1" class="menu menu-secondary menu-horizontal pull-right" role="menu">
                                 <li><a href="#">Privacy</a></li>
 
                                 <li><a href="#">Terms of Use</a></li>
 
                                 <li><a href="#">Sitemap</a></li>
-
-                                <li><a href="#">Links</a></li>
                             </ul>
+                            <span id="copyright" class="pull-right">&copy; 2013 Harbour City Hoppers</span>
                         </div>
                     </div>
 
