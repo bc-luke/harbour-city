@@ -9,7 +9,7 @@
     }
 }
 
-.content {
+.wrapper {
     height: 500px;
     background-color: green;
 }
@@ -19,11 +19,15 @@
 }
 
 [role="contentinfo"] {
-    color:  @footerTextColor;
+    color: @footerTextColor;
     font-size: @fontSizeSmall;
     font-weight: bold;
-    margin-top: @baseLineHeight * 1.5;
+    margin-top: @baseLineHeight * 1.5; 
 }
+
+   [role="contentinfo"] a:hover {
+        color:  @footerLinkColorHover;
+    }
 
 #support a {
     text-decoration: underline;

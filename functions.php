@@ -105,7 +105,7 @@ function harbour_city_scripts_styles() {
 			'family' => 'Open+Sans:400italic,700italic,400,700',
 			'subset' => $subsets,
 		);
-		wp_enqueue_style( 'twentytwelve-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
+		wp_enqueue_style( 'harbour-city-fonts', add_query_arg( $query_args, "$protocol://fonts.googleapis.com/css" ), array(), null );
 	}
 
 	/*
@@ -119,4 +119,54 @@ function harbour_city_scripts_styles() {
 	wp_enqueue_style( 'harbour-city-ie', get_template_directory_uri() . '/css/ie.css', array( 'harbour-city-style' ), '20121010' );
 	$wp_styles->add_data( 'harbour-city-ie', 'conditional', 'lt IE 9' );
 }
-add_action( 'wp_enqueue_scripts', 'twentytwelve_scripts_styles' );
+add_action( 'wp_enqueue_scripts', 'harbour_city_scripts_styles' );
+
+/**
+ * Creates a nicely formatted and more specific title element text
+ * for output in head of document, based on current view.
+ *
+ * @since Harbour City 1.0
+ *
+ * @param string $title Default title text for current view.
+ * @param string $sep Optional separator.
+ * @return string Filtered title.
+ */
+function harbour_city_wp_title( $title, $sep ) {
+	global $paged, $page;
+
+	if ( is_feed() )
+		return $title;
+
+	// Add the site name.
+	$title .= get_bloginfo( 'name' );
+
+	// Add the site description for the home/front page.
+	$site_description = get_bloginfo( 'description', 'display' );
+	if ( $site_description && ( is_home() || is_front_page() ) )
+		$title = "$title $sep $site_description";
+
+	// Add a page number if necessary.
+	if ( $paged >= 2 || $page >= 2 )
+		$title = "$title $sep " . sprintf( __( 'Page %s', 'harbour-city' ), max( $paged, $page ) );
+
+	return $title;
+}
+add_filter( 'wp_title', 'harbour_city_wp_title', 10, 2 );
+
+/**
+ * Registers our main widget area and the front page widget areas.
+ *
+ * @since Twenty Twelve 1.0
+ */
+function harbour_city_widgets_init() {
+	register_sidebar( array(
+		'name' => __( 'Footer Widgets', 'harbour-city' ),
+		'id' => 'widgets-footer',
+		'description' => __( 'Appears on the index page', 'harbour-city' ),
+        'before_widget' => '<li id="%1$s" class="widget span4 %2$s">',
+        'after_widget' => '</li>',
+		'before_title' => '<h3 class="widget-title">',
+		'after_title' => '</h3>',
+	) );
+}
+add_action( 'widgets_init', 'harbour_city_widgets_init' );
