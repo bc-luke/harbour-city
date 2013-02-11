@@ -7788,11 +7788,38 @@ a.badge:hover {
   padding: 20px;
   margin-top: 20px;
   height: 140px;
-  border-right: 1px solid #999999;
   background-color: #333333;
 }
-.widget:last-child {
-  border-right: none;
+.widget-separator {
+  height: 140px;
+  width: 1px;
+  border-right: 1px solid white;
+  float: left;
+  position: relative;
+  left: -41px;
+  top: -20px;
+  margin: 0 10px;
+}
+.widget:first-child .widget-separator {
+  display: none;
+  visibility: hidden;
+}
+@media (min-width: 1200px) {
+  .widget-separator {
+    margin: 0 15px;
+    left: -51px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .widget-separator {
+    margin: 0 10px;
+    left: -41px;
+  }
+}
+@media (max-width: 767px) {
+  .widget-separator {
+    display: none;
+  }
 }
 .menu-horizontal li {
   display: inline-block;
@@ -7802,16 +7829,6 @@ a.badge:hover {
   padding: 0 6px;
 }
 .menu.menu-primary li {
-  /*&:after {
-                content: "|";
-                padding-right: @baseFontSize / 1.25px;
-                padding-left:@baseFontSize / 1.16px;
-            }
-
-            &:last-child:after {
-                content: "";
-            }*/
-
   border-right: 1px solid #ffffff;
 }
 .menu.menu-primary li:last-child {

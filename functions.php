@@ -163,7 +163,7 @@ function harbour_city_widgets_init() {
 		'name' => __( 'Footer Widgets', 'harbour-city' ),
 		'id' => 'widgets-footer',
 		'description' => __( 'Appears on the index page', 'harbour-city' ),
-        'before_widget' => '<li id="%1$s" class="widget span4 %2$s">',
+        'before_widget' => '<li id="%1$s" class="widget span4 %2$s"><div class="widget-separator"></div>',
         'after_widget' => '</li>',
 		'before_title' => '<h3 class="widget-title">',
 		'after_title' => '</h3>',

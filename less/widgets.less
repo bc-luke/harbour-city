@@ -7,9 +7,41 @@
     padding: @baseLineHeight;
     margin-top: @baseLineHeight;
     height: @widgetHeight;
-    border-right: 1px solid @widgetBorderColor;
     background-color: @grayDark;
-    &:last-child {
-        border-right: none;
+}
+
+.widget-separator {
+    height: @widgetHeight;
+    width: 1px;
+    border-right: 1px solid white;
+    float: left;
+    position: relative;
+    left: -(@baseLineHeight + @gridGutterWidth + 1px);
+    top: -@baseLineHeight;
+    margin: 0 @gridGutterWidth / 2;
+}
+
+.widget:first-child .widget-separator {
+    display: none;
+    visibility: hidden;
+}
+
+@media (min-width: 1200px) {
+    .widget-separator {
+        margin: 0 @gridGutterWidth1200 / 2;
+        left: -(@baseLineHeight + @gridGutterWidth1200 + 1px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .widget-separator {
+        margin: 0 @gridGutterWidth768 / 2;
+        left: -(@baseLineHeight + @gridGutterWidth768 + 1px);
+    }
+}
+
+@media (max-width: 767px) {
+    .widget-separator {
+        display: none;
     }
 }
