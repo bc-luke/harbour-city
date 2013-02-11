@@ -7766,13 +7766,16 @@ a.badge:hover {
   background-color: green;
 }
 .footer {
-  height: 200px;
+  height: 150px;
 }
 [role="contentinfo"] {
   color: #3d3c3d;
   font-size: 11.9px;
   font-weight: bold;
   margin-top: 30px;
+}
+[role="contentinfo"] a:hover {
+  color: #706f70;
 }
 #support a {
   text-decoration: underline;
@@ -7795,6 +7798,9 @@ a.badge:hover {
   display: inline-block;
   float: left;
 }
+.menu li {
+  padding: 0 6px;
+}
 .menu.menu-primary li {
   /*&:after {
                 content: "|";
@@ -7806,8 +7812,10 @@ a.badge:hover {
                 content: "";
             }*/
 
-  padding: 0 6px;
   border-right: 1px solid #ffffff;
+}
+.menu.menu-primary li:last-child {
+  border-right: none;
 }
 .menu.menu-primary a {
   color: #ffffff;

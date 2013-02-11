@@ -5,19 +5,15 @@
     }
 }
 .menu {
+    li {
+      padding: @menuPadding;
+    }
     &.menu-primary {
         li {
-            /*&:after {
-                content: "|";
-                padding-right: @baseFontSize / 1.25px;
-                padding-left:@baseFontSize / 1.16px;
-            }
-
-            &:last-child:after {
-                content: "";
-            }*/
-            padding: @paddingMini;
             border-right: 1px solid @primaryMenuLinkColor;
+            &:last-child {
+              border-right: none;
+            }
         }
 
         a {
