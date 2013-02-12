@@ -1,24 +1,28 @@
 .widget-area {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .widget {
-    padding: @baseLineHeight;
+    padding: @widgetPadding;
     margin-top: @baseLineHeight;
-    height: @widgetHeight;
+    min-height: @widgetHeight;
     background-color: @grayDark;
+    position: relative;
 }
 
-.widget-separator {
-    height: @widgetHeight;
+.widget:before {
+    content: "";
+    height: 100%;
     width: 1px;
-    border-right: 1px solid white;
-    float: left;
-    position: relative;
-    left: -(@baseLineHeight + @gridGutterWidth + 1px);
-    top: -@baseLineHeight;
-    margin: 0 @gridGutterWidth / 2;
+    border-right: 1px solid @grayTheme;
+    position: absolute;
+    left: -(@gridGutterWidth / 2 + 1px);
+    top: 0;
+}
+
+.widget:nth-child(3n+1):before {
+    display: none;
 }
 
 .widget:first-child .widget-separator {
@@ -27,21 +31,19 @@
 }
 
 @media (min-width: 1200px) {
-    .widget-separator {
-        margin: 0 @gridGutterWidth1200 / 2;
-        left: -(@baseLineHeight + @gridGutterWidth1200 + 1px);
+    .widget:before {
+        left: -(@gridGutterWidth1200 / 2 + 1px);
     }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-    .widget-separator {
-        margin: 0 @gridGutterWidth768 / 2;
-        left: -(@baseLineHeight + @gridGutterWidth768 + 1px);
+    .widget:before {
+        left: -(@gridGutterWidth768 / 2 + 1px);
     }
 }
 
 @media (max-width: 767px) {
-    .widget-separator {
+    .widget:before {
         display: none;
     }
 }
