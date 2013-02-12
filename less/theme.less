@@ -1,17 +1,29 @@
 @import "scaffolding";
 
-.header {
-    border: 1px solid #499249;
-    height: 200px;
+.header-image {
+    margin-top: @baseLineHeight * 1.5;
+}
 
-    .logo {
-        max-width: 225px;
+.container {
+    background-size: cover;
+    background-attachment: scroll;
+    background-image: url('img/backgrounds/background-front.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 767px) {
+    .container {
+        background-position: 20% 20%;
+        background-size: auto;
     }
 }
 
+
 .content {
     height: 500px;
-    background-color: green;
 }
 
 [role="contentinfo"] {
@@ -21,9 +33,15 @@
     margin-top: @baseLineHeight * 1.5; 
 }
 
-   [role="contentinfo"] a:hover {
-        color:  @footerLinkColorHover;
+[role="contentinfo"] a:hover {
+    color:  @footerLinkColorHover;
+}
+
+@media (max-width: 767px) {
+    [role="contentinfo"] {
+        text-align: center;
     }
+}
 
 #support a {
     text-decoration: underline;

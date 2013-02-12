@@ -45,8 +45,8 @@ add_action( 'after_setup_theme', 'harbour_city_setup' );
 // Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 register_default_headers( array(
 	'harbour-city-hoppers-logo' => array(
-		'url' => get_template_directory_uri() . '/images/headers/harbour-city-hoppers-logo.png',
-		'thumbnail_url' =>  get_template_directory_uri() . '/images/headers//harbour-city-hoppers-logo-thumbnail.png',
+		'url' => get_template_directory_uri() . '/img/headers/harbour-city-hoppers-logo.png',
+		'thumbnail_url' =>  get_template_directory_uri() . '/img/headers/harbour-city-hoppers-logo-thumbnail.png',
 		/* translators: header image description */
 		'description' => __( 'Sydney', 'harbour-city' )
 	),

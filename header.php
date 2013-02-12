@@ -16,21 +16,23 @@ and open the template in the editor.
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
-        <div class="page container">
+        <div class="container">
             <div class="row">
-                <header class="header span12">
-
-                <?php $header_image = get_header_image();
-                if ( ! empty( $header_image ) ) : ?>
-                    <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
-                <?php endif; ?>
-
-                  <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
-                  <ul id="menu-primary-1" class="menu menu-primary menu-horizontal pull-right" role="menu">
-                    <li><a tabindex="-1" href="#">Action</a></li>
-                    <li><a tabindex="-1" href="#">Another action</a></li>
-                    <li><a tabindex="-1" href="#">Something else here</a></li>
-                  </ul>
+                <header class="header">
+                    <div class="span5">
+                        <?php $header_image = get_header_image();
+                        if ( ! empty( $header_image ) ) : ?>
+                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a>
+                        <?php endif; ?>
+                    </div>
+                    <div class="span7">
+                        <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
+                        <ul id="menu-primary-1" class="menu menu-primary menu-horizontal pull-right" role="menu">
+                            <li><a tabindex="-1" href="#">Action</a></li>
+                            <li><a tabindex="-1" href="#">Another action</a></li>
+                            <li><a tabindex="-1" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
 
 
                 </header>

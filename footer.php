@@ -13,7 +13,7 @@
                     <span id="copyright" class="pull-right">&copy; 2013 Harbour City Hoppers</span>
                 </div>
             </div>
-        </div>
+        </div> <!-- .container -->
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <?php wp_footer(); ?>
     </body>
