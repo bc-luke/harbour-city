@@ -1,0 +1,41 @@
+.menu-primary {
+        
+    margin-top: @baseLineHeight * 3;
+        
+    li {
+        margin-left: 0;
+        &:after {
+            content: "|";
+            margin: @menuSeparatorMargin;
+        }
+        &:last-child:after {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    a {
+        color: @primaryMenuLinkColor;
+
+        &:hover {
+            color: @primaryMenuLinkColorHover;
+        }
+    }
+}
+.menu-secondary {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .menu-secondary {
+        float: none;
+        text-align: center;
+        li {
+            float: none;
+        }
+        margin: auto;
+    }
+    #copyright {
+        float: none;
+    }
+}

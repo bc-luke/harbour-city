@@ -7754,8 +7754,10 @@ a.badge:hover {
     overflow: visible !important;
   }
 }
-.header-image {
-  margin-top: 30px;
+.menu-horizontal li {
+  display: inline-block;
+  float: left;
+  margin-left: 20px;
 }
 .container {
   background-attachment: scroll;
@@ -7773,6 +7775,9 @@ a.badge:hover {
 }
 .content {
   height: 500px;
+}
+.header-image {
+  margin-top: 30px;
 }
 [role="contentinfo"] {
   color: #3d3c3d;
@@ -7833,26 +7838,28 @@ a.badge:hover {
     display: none;
   }
 }
-.menu-horizontal li {
-  display: inline-block;
-  float: left;
-}
-.menu.menu-primary {
+.menu-primary {
   margin-top: 60px;
 }
-.menu.menu-primary li:after {
+.menu-primary li {
+  margin-left: 0;
+}
+.menu-primary li:after {
   content: "|";
   margin: 0 5px;
 }
-.menu.menu-primary li:last-child:after {
+.menu-primary li:last-child:after {
   display: none;
   visibility: hidden;
 }
-.menu.menu-primary a {
+.menu-primary a {
   color: #ffffff;
 }
-.menu.menu-primary a:hover {
+.menu-primary a:hover {
   color: #ffc000;
+}
+.menu-secondary {
+  margin-left: 0;
 }
 @media (max-width: 767px) {
   .menu-secondary {

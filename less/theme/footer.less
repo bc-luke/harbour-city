@@ -1,0 +1,20 @@
+[role="contentinfo"] {
+    color: @footerTextColor;
+    font-size: @fontSizeSmall;
+    font-weight: bold;
+    margin-top: @baseLineHeight * 1.5; 
+}
+
+[role="contentinfo"] a:hover {
+    color:  @footerLinkColorHover;
+}
+
+@media (max-width: 767px) {
+    [role="contentinfo"] {
+        text-align: center;
+    }
+}
+
+#support a {
+    text-decoration: underline;
+}
