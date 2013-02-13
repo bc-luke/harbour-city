@@ -14,11 +14,29 @@
 
 get_header(); ?>
 
-<div class="main" role="main">
+<div id="front-page" class="main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
-        <?php echo get_post_format(); ?>
-        <?php get_template_part( 'content', 'front-page' ); ?>
+
+        <div class="align-wrapper">
+            <div class="row align-base">
+                <div class="offset7 span5">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <header class="entry-header hide">
+                            <h1 class="entry-title"><?php the_title(); ?></h1>
+                        </header>
+
+                        <div class="entry-content">
+                            <?php the_content(); ?>
+                            <?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'harbour-city' ), 'after' => '</div>' ) ); ?>
+                        </div><!-- .entry-content -->
+                        <footer class="entry-meta">
+                            <?php edit_post_link( __( 'Edit', 'harbour-city' ), '<span class="edit-link">', '</span>' ); ?>
+                        </footer><!-- .entry-meta -->
+                    </article><!-- #post -->
+                </div>
+            </div>
+        </div>
 
     <?php endwhile; // end of the loop. ?>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * The template used for displaying page content in page.php and front-page.php
+ * The template used for displaying page content in page.php
  *
  * @package WordPress
  * @subpackage Harbour_City

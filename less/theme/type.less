@@ -1,10 +1,21 @@
-strong {
-  text-transform: uppercase;
-  font-size: @baseFontSize * 2;
-//  line-height: @baseLineHeight * 2;
-  strong {
-    font-family: @altFontFamily;
-    font-size: 150%;
-//    line-height: 150%;
-  }
+b {
+  text-transform: uppercase; 
 }
+
+.text-feature {
+  line-height: normal;
+  font-size:  @baseFontSize * 1.43;
+  
+  strong {
+    text-transform: uppercase;
+    font-size: @baseFontSize * 2;
+  }
+
+  b {
+    font-weight: normal;
+    font-family: @altFontFamily;
+    font-size: 230%;
+  }
+  
+}
+
