@@ -1090,7 +1090,7 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
+  font-family: "Abraham Lincoln", Garamond, "Times New Roman", Times, serif;
   font-weight: bold;
   line-height: 20px;
   color: inherit;
@@ -7759,7 +7759,13 @@ a.badge:hover {
   float: left;
   margin-left: 20px;
 }
-.content {
+@font-face {
+  font-family: 'Abraham Lincoln';
+  src: url('http://cookedfonts.com/sets/abrahamlincoln/abrahamlincoln-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.main {
   background-attachment: scroll;
   background-image: url('img/backgrounds/background-front.jpg');
   background-repeat: no-repeat;
@@ -7767,13 +7773,13 @@ a.badge:hover {
   height: 485px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .content {
+  .main {
     background-size: cover;
     -moz-background-size: cover;
   }
 }
 @media (max-width: 767px) {
-  .content {
+  .main {
     background-position: 20% 20%;
   }
 }
@@ -7797,6 +7803,9 @@ a.badge:hover {
 #support a {
   text-decoration: underline;
 }
+.text-feature {
+  text-align: right;
+}
 .widget-area {
   margin: 0;
   padding: 0;
@@ -7805,7 +7814,6 @@ a.badge:hover {
   padding: 20px;
   margin-top: 20px;
   min-height: 140px;
-  background-color: #333333;
   position: relative;
 }
 .widget:before {
@@ -7838,6 +7846,14 @@ a.badge:hover {
   .widget:before {
     display: none;
   }
+}
+strong {
+  text-transform: uppercase;
+  font-size: 28px;
+}
+strong strong {
+  font-family: "Abraham Lincoln", Garamond, "Times New Roman", Times, serif;
+  font-size: 150%;
 }
 .menu-primary {
   margin-top: 60px;

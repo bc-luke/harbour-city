@@ -14,7 +14,15 @@
 
 get_header(); ?>
 
-<div class="content"></div>
+<div class="main" role="main">
+
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php echo get_post_format(); ?>
+        <?php get_template_part( 'content', 'front-page' ); ?>
+
+    <?php endwhile; // end of the loop. ?>
+
+</div>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
