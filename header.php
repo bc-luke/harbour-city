@@ -1,7 +1,3 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
     <head>
@@ -27,11 +23,7 @@ and open the template in the editor.
                     </div>
                     <div class="span7">
                         <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
-                        <ul id="menu-primary-1" class="menu menu-primary menu-horizontal pull-right" role="menu">
-                            <li><a tabindex="-1" href="#">Action</a></li>
-                            <li><a tabindex="-1" href="#">Another action</a></li>
-                            <li><a tabindex="-1" href="#">Something else here</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu menu-primary menu-horizontal pull-right' ) ); ?>
                     </div>
 
 

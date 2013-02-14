@@ -7890,6 +7890,9 @@ b {
   font-family: "Abraham Lincoln Regular", Garamond, "Times New Roman", Times, serif;
   font-size: 230%;
 }
+.text-highlight {
+  color: #ffc000;
+}
 .menu-primary {
   margin-top: 60px;
 }
