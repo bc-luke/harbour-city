@@ -29,6 +29,11 @@
   visibility: hidden;
 }
 
+.widget [class^="icon-theme-sticker-"], 
+.widget [class*=" icon-theme-sticker-"] {
+  margin-top: -(@baseLineHeight * 0.25);
+}
+
 @media (min-width: 1200px) {
   .widget:before {
     left: -(@gridGutterWidth1200 / 2 + 1px);
