@@ -11,20 +11,22 @@
 @textColor:             @creamTheme;
 @highlightTextColor:    @yellowTheme;
 
-// Footer
-// -------------------------
 @footerTextColor:       @grayTheme;
 @footerLinkColor:       @grayTheme;
-@footerLinkColorHover:  lighten(@footerLinkColor, 20%);
 
 // Links
 // -------------------------
-@linkColor:             @grayTheme;
+@linkColor:             @yellowTheme;
 @linkColorHover:        @linkColor;
+@altLinkColor:          @blueTheme;
+@altLinkColorHover:     @blueTheme;
 
 @primaryMenuLinkColor:         @white;
 @primaryMenuLinkColorHover:    @yellowTheme;
 @primaryMenuLinkColorCurrent:  @blueTheme;
+
+@footerLinkColorHover:  lighten(@footerLinkColor, 20%);
+
 
 // Typography
 // -------------------------
@@ -40,6 +42,9 @@
 @headingsFontFamily:    @altFontFamily; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
+
+@highlightTextColor:    @yellowTheme;
+@altHighlightTextColor: @blueTheme;
 
 // Widgets
 // -------------------------

@@ -358,11 +358,11 @@ body {
   background-color: #000000;
 }
 a {
-  color: #3d3c3d;
+  color: #ffc000;
   text-decoration: none;
 }
 a:hover {
-  color: #3d3c3d;
+  color: #ffc000;
   text-decoration: underline;
 }
 .img-rounded {
@@ -3134,28 +3134,28 @@ table th[class*="span"],
 .dropdown-submenu:hover > a {
   text-decoration: none;
   color: #d9d9d9;
-  background-color: #383738;
-  background-image: -moz-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d3c3d), to(#302f30));
-  background-image: -webkit-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: -o-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: linear-gradient(to bottom, #3d3c3d, #302f30);
+  background-color: #f5b800;
+  background-image: -moz-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc000), to(#e6ad00));
+  background-image: -webkit-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: -o-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: linear-gradient(to bottom, #ffc000, #e6ad00);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d3c3d', endColorstr='#ff302f30', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffc000', endColorstr='#ffe6ad00', GradientType=0);
 }
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #383738;
-  background-image: -moz-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d3c3d), to(#302f30));
-  background-image: -webkit-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: -o-linear-gradient(top, #3d3c3d, #302f30);
-  background-image: linear-gradient(to bottom, #3d3c3d, #302f30);
+  background-color: #f5b800;
+  background-image: -moz-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc000), to(#e6ad00));
+  background-image: -webkit-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: -o-linear-gradient(top, #ffc000, #e6ad00);
+  background-image: linear-gradient(to bottom, #ffc000, #e6ad00);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d3c3d', endColorstr='#ff302f30', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffc000', endColorstr='#ffe6ad00', GradientType=0);
 }
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
@@ -3495,17 +3495,17 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #3d3c3d;
-  background-image: -moz-linear-gradient(top, #3d3c3d, #3d3c3d);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d3c3d), to(#3d3c3d));
-  background-image: -webkit-linear-gradient(top, #3d3c3d, #3d3c3d);
-  background-image: -o-linear-gradient(top, #3d3c3d, #3d3c3d);
-  background-image: linear-gradient(to bottom, #3d3c3d, #3d3c3d);
+  background-color: #f6d900;
+  background-image: -moz-linear-gradient(top, #ffc000, #e9ff00);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffc000), to(#e9ff00));
+  background-image: -webkit-linear-gradient(top, #ffc000, #e9ff00);
+  background-image: -o-linear-gradient(top, #ffc000, #e9ff00);
+  background-image: linear-gradient(to bottom, #ffc000, #e9ff00);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3d3c3d', endColorstr='#ff3d3c3d', GradientType=0);
-  border-color: #3d3c3d #3d3c3d #161616;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffc000', endColorstr='#ffe9ff00', GradientType=0);
+  border-color: #e9ff00 #e9ff00 #a3b300;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #3d3c3d;
+  *background-color: #e9ff00;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3516,12 +3516,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #3d3c3d;
-  *background-color: #302f30;
+  background-color: #e9ff00;
+  *background-color: #d2e600;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #232323 \9;
+  background-color: #bacc00 \9;
 }
 .btn-primary:hover,
 .btn-primary:active,
@@ -3529,12 +3529,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #3d3c3d;
-  *background-color: #302f30;
+  background-color: #e9ff00;
+  *background-color: #d2e600;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #232323 \9;
+  background-color: #bacc00 \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -3793,13 +3793,13 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #3d3c3d;
+  color: #ffc000;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
 .btn-link:hover {
-  color: #3d3c3d;
+  color: #ffc000;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3942,7 +3942,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #808080;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #3d3c3d;
+  background-color: #e9ff00;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -4133,7 +4133,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a:hover {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #3d3c3d;
+  background-color: #ffc000;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -4225,7 +4225,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #3d3c3d;
+  background-color: #ffc000;
 }
 .nav-stacked > li {
   float: none;
@@ -4279,13 +4279,13 @@ input[type="submit"].btn.btn-mini {
   border-radius: 6px;
 }
 .nav .dropdown-toggle .caret {
-  border-top-color: #3d3c3d;
-  border-bottom-color: #3d3c3d;
+  border-top-color: #ffc000;
+  border-bottom-color: #ffc000;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #3d3c3d;
-  border-bottom-color: #3d3c3d;
+  border-top-color: #ffc000;
+  border-bottom-color: #ffc000;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -5545,7 +5545,7 @@ input[type="submit"].btn.btn-mini {
   transition: all 0.2s ease-in-out;
 }
 a.thumbnail:hover {
-  border-color: #3d3c3d;
+  border-color: #ffc000;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
@@ -7768,11 +7768,15 @@ a.badge:hover {
 .text-right {
   text-align: right;
 }
+.text-xxlarge {
+  font-size: 46.06px;
+  line-height: 65.80000000000001px;
+}
 .text-xlarge {
-  font-size: 49px;
+  font-size: 28px;
 }
 .text-large {
-  font-size: 35px;
+  font-size: 20.02px;
 }
 .text-small {
   font-size: 11.9px;
@@ -7819,6 +7823,9 @@ footer {
   font-weight: bold;
   margin-top: 30px;
 }
+footer a {
+  color: #3d3c3d;
+}
 footer a:hover {
   color: #706f70;
 }
@@ -7829,6 +7836,12 @@ footer a:hover {
 }
 #support a {
   text-decoration: underline;
+}
+a.alt-link {
+  color: #29406f;
+}
+a.alt-link:hover {
+  color: #29406f;
 }
 #front-page footer {
   text-align: right;
@@ -7877,21 +7890,17 @@ footer a:hover {
 b {
   text-transform: uppercase;
 }
-.text-feature {
-  line-height: normal;
-  font-size: 20.02px;
-}
-.text-feature strong {
-  text-transform: uppercase;
-  font-size: 28px;
-}
-.text-feature b {
-  font-weight: normal;
+.text-alt {
   font-family: "Abraham Lincoln Regular", Garamond, "Times New Roman", Times, serif;
-  font-size: 230%;
+}
+.text-upper {
+  text-transform: uppercase;
 }
 .text-highlight {
   color: #ffc000;
+}
+.text-highlight-alt {
+  color: #29406f;
 }
 .menu-primary {
   margin-top: 60px;

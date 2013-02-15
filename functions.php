@@ -58,6 +58,11 @@ register_default_headers( array(
 require( get_template_directory() . '/inc/custom-header.php' );
 
 /**
+ * Adds support for theme options.
+ */
+require ( get_template_directory() . '/inc/theme-options.php' );
+
+/**
  * Enqueues scripts and styles for front-end.
  *
  * @since Harbour City 1.0

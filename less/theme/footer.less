@@ -5,8 +5,11 @@ footer {
   margin-top: @baseLineHeight * 1.5; 
 }
 
-footer a:hover {
-  color:  @footerLinkColorHover;
+footer a {
+  color: @footerLinkColor;
+  &:hover {
+    color:  @footerLinkColorHover;
+  }
 }
 
 @media (max-width: 767px) {
