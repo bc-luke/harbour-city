@@ -1,17 +1,13 @@
+
+
 .menu-primary {
-    
-  margin-top: @baseLineHeight * 3;
+  height: @themeIconSocialHeight;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
     
   li {
     margin-left: 0;
-    &:after {
-      content: "|";
-      margin: @menuSeparatorMargin;
-    }
-    &:last-child:after {
-      display: none;
-      visibility: hidden;
-    }
   }
 
   a {
@@ -26,7 +22,44 @@
   margin-left: 0;
 }
 
+@media (min-width: 768px) {
+  .menu-primary {
+    li {
+      &:after {
+        content: "|";
+        margin: @menuSeparatorMargin;
+      }
+      &:last-child:after {
+        display: none;
+        visibility: hidden;
+      }
+    }
+  }
+
+  a {
+    color: @primaryMenuLinkColor;
+
+    &:hover {
+      color: @primaryMenuLinkColorHover;
+    }
+  }
+   
+  .menu-primary-container {
+    float: right;
+  }
+
+  .menu-secondary {
+    float: right;
+  }
+}
+
 @media (max-width: 767px) {
+  .menu-primary {
+    li {
+      display: list-item;
+      float: none;
+    }
+  }
   .menu-secondary {
     float: none;
     text-align: center;

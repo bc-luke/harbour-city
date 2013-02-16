@@ -1,14 +1,32 @@
-.header-image {
-  margin-top: @baseLineHeight * 1.5;
+header {
+  padding-top: 30px;
 }
-.social-media-container {
-  float: right;
+
+.header-links {
+  padding-top: 30px;
 }
+
+
 .social-media {
-  margin-top: @baseLineHeight * 3 - (@baseFontSize / 2);
-  margin-left: 5px;
+  margin: 0 0 0 5px;
+  height: @themeIconSocialHeight;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  
   li {
     margin-left: 10px;
     display: inline-block;
   }
+}
+
+@media (min-width: 768px) {
+  .social-media-container {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+
 }

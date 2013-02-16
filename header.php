@@ -21,10 +21,14 @@
                             <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="<?php echo esc_attr( get_bloginfo( 'description', 'display' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" /></a>
                         <?php endif; ?>
                     </div>
-                    <div class="span7">
+                    <div class="span7 header-links">
                         <?php get_template_part( 'social-media' ); ?>
-                        <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
-                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu menu-primary list-horizontal pull-right' ) ); ?>
+                        
+                        <?php wp_nav_menu( array( 
+                            'theme_location' => 'primary',
+                            'menu_class' => 'menu menu-primary list-horizontal',
+                            'items_wrap' => '<button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button><ul id="%1$s" class="%2$s">%3$s</ul>'
+                        ) ); ?>
                     </div>
                 </header>
             </div>

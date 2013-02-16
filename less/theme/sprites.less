@@ -2,6 +2,7 @@
 [class*=" icon-theme-"] {
   background-image: url("@{themeIconSpritePath}");
   margin-top: 0px;
+  vertical-align: middle;
 }
 
 [class^="icon-theme-sticker-"],
@@ -14,8 +15,8 @@
 [class^="icon-theme-social-"],
 [class*=" icon-theme-social-"] {
   width: 30px;
-  height: 30px;
-  line-height: 30px;
+  height: @themeIconSocialHeight;
+  line-height: @themeIconSocialHeight;
 }
 
 .icon-theme-sticker-enquire {
