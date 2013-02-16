@@ -7788,7 +7788,7 @@ a.badge:hover {
   font-size: 11.200000000000001px;
   line-height: 11.200000000000001px;
 }
-.menu-horizontal li {
+.list-horizontal li {
   display: inline-block;
   float: left;
   margin-left: 16px;
@@ -7820,6 +7820,17 @@ a.badge:hover {
 }
 .header-image {
   margin-top: 30px;
+}
+.social-media-container {
+  float: right;
+}
+.social-media {
+  margin-top: 53px;
+  margin-left: 5px;
+}
+.social-media li {
+  margin-left: 10px;
+  display: inline-block;
 }
 footer {
   color: #3d3c3d;
@@ -7877,7 +7888,8 @@ a.alt-link:hover {
   visibility: hidden;
 }
 .widget [class^="icon-theme-sticker-"],
-.widget [class*=" icon-theme-sticker-"] {
+.widget [class*=" icon-theme-sticker-"],
+.widget img {
   margin-top: -5px;
 }
 @media (min-width: 1200px) {
@@ -7944,7 +7956,7 @@ a.alt-link:hover {
 }
 .menu-primary li:after {
   content: "|";
-  margin: 0 5px;
+  margin: 0 7px;
 }
 .menu-primary li:last-child:after {
   display: none;

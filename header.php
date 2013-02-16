@@ -22,11 +22,10 @@
                         <?php endif; ?>
                     </div>
                     <div class="span7">
+                        <?php get_template_part( 'social-media' ); ?>
                         <button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button>
-                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu menu-primary menu-horizontal pull-right' ) ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'menu menu-primary list-horizontal pull-right' ) ); ?>
                     </div>
-
-
                 </header>
             </div>
             <div class="row">
