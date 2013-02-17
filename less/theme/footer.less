@@ -12,12 +12,35 @@
   }
 }
 
+#support a {
+  text-decoration: underline;
+}
+
+.menu-secondary {
+  margin-left: 0;
+  .list-horizontal();
+}
+
 @media (max-width: 767px) {
   [role="contentinfo"] {
     text-align: center;
   }
+
+  .menu-secondary {
+    float: none;
+    text-align: center;
+    li {
+      float: none;
+    }
+    margin: auto;
+  }
+  #copyright {
+    float: none;
+  }
 }
 
-#support a {
-  text-decoration: underline;
+@media (min-width: 768px) {
+  .menu-secondary {
+    float: right;
+  }
 }
