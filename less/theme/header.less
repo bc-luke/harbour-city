@@ -10,13 +10,12 @@ header {
 .social-media {
   margin: 0 0 0 5px;
   height: @themeIconSocialHeight;
-  display: table-cell;
+
   vertical-align: middle;
   text-align: center;
 
   
   li {
-    margin-left: 10px;
     display: inline-block;
   }
 }
@@ -25,8 +24,23 @@ header {
   .social-media-container {
     float: right;
   }
+
+  .social-media {
+    display: table-cell;
+    li {
+      margin-left: 10px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-
+  .header-image-container {
+    text-align: center;
+  }
+  .social-media {
+    margin: 0;
+  }
+  .menu-toggle {
+    margin: 0 auto;
+  }
 }

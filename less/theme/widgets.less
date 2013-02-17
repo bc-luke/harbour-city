@@ -8,6 +8,9 @@
   margin-top: @baseLineHeight;
   min-height: @widgetHeight;
   position: relative;
+  img, i {
+    float: right;
+  }
 }
 
 .widget:before {
@@ -42,13 +45,34 @@
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .widget:before {
-    left: -(@gridGutterWidth768 / 2 + 1px);
+  .widget {
+    min-height: 200px;
+    padding: 10px 2px 2px 2px;
+    .widget-thumbnail {
+      float: none;
+    }
+    img + p {
+      margin-top: @baseLineHeight / 2;
+    }
+
+    &:before {
+      left: -(@gridGutterWidth768 / 2 + 1px);
+    }
+    .thumbnail {
+      float: none;
+    }
   }
+
 }
 
 @media (max-width: 767px) {
-  .widget:before {
-    display: none;
+  .widget {
+    border-bottom: 1px solid @grayTheme;
+    &:before {
+      display: none;
+    }
+    &:last-child {
+      border-bottom: none;
+    }
   }
 }
