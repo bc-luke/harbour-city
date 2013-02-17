@@ -8043,12 +8043,6 @@ a.alt-link:hover {
     display: none;
     visibility: hidden;
   }
-  a {
-    color: #ffffff;
-  }
-  a:hover {
-    color: #ffc000;
-  }
   .menu-primary-container {
     float: right;
   }
