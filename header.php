@@ -28,7 +28,7 @@
                         <?php wp_nav_menu( array( 
                             'theme_location' => 'primary',
                             'menu_class' => 'menu menu-primary',
-                            'items_wrap' => '<button type="button" class="visible-phone menu-toggle" data-toggle="dropdown">Menu</button><ul id="%1$s" class="%2$s">%3$s</ul>'
+                            'items_wrap' => '<button type="button" class="btn btn-inverse visible-phone menu-toggle" data-toggle="menu-primary">Menu</button><ul id="%1$s" class="%2$s">%3$s</ul>'
                         ) ); ?>
                     </div>
                 </header>
