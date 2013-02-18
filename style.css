@@ -7771,6 +7771,24 @@ a.badge:hover {
 .text-right {
   text-align: right;
 }
+.text-xxlarge {
+  font-size: 46.06px;
+}
+.text-xlarge {
+  font-size: 28px;
+}
+.text-large {
+  font-size: 20.02px;
+}
+.text-medium {
+  font-size: 14px;
+}
+.text-small {
+  font-size: 11.9px;
+}
+.text-xsmall {
+  font-size: 11.200000000000001px;
+}
 .list-horizontal li {
   display: inline-block;
   float: left;
@@ -7955,6 +7973,16 @@ a.alt-link:hover {
     position: static;
   }
 }
+.text-feature {
+  line-height: 1;
+  font-size: 20.02px;
+}
+.text-feature .text-upper {
+  font-size: 28px;
+}
+.text-feature .text-alt {
+  font-size: 233%;
+}
 .widget-area {
   margin: 0;
   padding: 0;
@@ -8025,15 +8053,15 @@ a.alt-link:hover {
   }
 }
 .widget {
-  font-size: 20.02px;
+  font-size: 14px;
   line-height: 1;
 }
 .widget strong {
-  font-size: 28px;
+  font-size: 20.02px;
   line-height: 1;
 }
 .widget strong .text-alt {
-  font-size: 200%;
+  font-size: 185%;
 }
 .text-alt {
   font-family: "Abraham Lincoln Regular", Garamond, "Times New Roman", Times, serif;
