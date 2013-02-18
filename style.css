@@ -147,6 +147,9 @@ table {
 * {
   box-sizing: border-box;
 }
+main {
+  display: block;
+}
 /*!
  * Bootstrap v2.2.2
  *
