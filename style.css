@@ -8070,6 +8070,17 @@ a.alt-link:hover {
 .widget strong .text-alt {
   font-size: 185%;
 }
+@media (min-width: 1200px) {
+  .widget {
+    font-size: 20.02px;
+  }
+  .widget strong {
+    font-size: 28px;
+  }
+  .widget strong .text-alt {
+    font-size: 185%;
+  }
+}
 .text-alt {
   font-family: "Abraham Lincoln Regular", Garamond, "Times New Roman", Times, serif;
 }
