@@ -40,6 +40,6 @@ get_header(); ?>
 
 </main>
 
-<?php get_sidebar(); ?>
+<?php get_sidebar( 'front' ); ?>
 <?php get_footer(); ?>
                 

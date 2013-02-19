@@ -168,7 +168,7 @@ function harbour_city_widgets_init() {
     register_sidebar( array(
         'name' => __( 'Footer Widgets', 'harbour-city' ),
         'id' => 'widgets-footer',
-        'description' => __( 'Appears on the index page', 'harbour-city' ),
+        'description' => __( 'Appears on the front page', 'harbour-city' ),
         'before_widget' => '<li id="%1$s" class="widget span4 %2$s">',
         'after_widget' => '</li>',
         'before_title' => '<h3 class="widget-title">',
