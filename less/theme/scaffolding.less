@@ -1,9 +1,5 @@
 .main {
-  background-attachment: scroll;
-  background-image: url('img/backgrounds/background-front.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 485px;
+  min-height: 485px;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -15,7 +11,9 @@
 
 @media (max-width: 767px) {
   .main {
-    background-position: 70% 20%;
-    height: 320px;
+    min-height: 320px;
+  }
+  body.custom-background {
+    background-position: 70% 40% !important;
   }
 }

@@ -12,22 +12,22 @@ a.alt-link {
 // -------------------------
 
 #front-page {
+  article {
+    margin-top: 370px;
+  }
   footer {
     text-align: right;
-  }
-}
-
-@media (min-width: 768px) {
-  #front-page {
-    article {
-      margin-top: 370px;
-    }
   }
 }
 
 @media (max-width: 767px) {
   #front-page {
     margin-top: @baseLineHeight;
+
+    article {
+      margin-top: 370px;
+    }
+
     & > .align-wrapper .align-base {
       position: static;
     }

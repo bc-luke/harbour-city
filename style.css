@@ -7805,11 +7805,7 @@ a.badge:hover {
   font-style: normal;
 }
 .main {
-  background-attachment: scroll;
-  background-image: url('img/backgrounds/background-front.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 485px;
+  min-height: 485px;
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .main {
@@ -7819,8 +7815,10 @@ a.badge:hover {
 }
 @media (max-width: 767px) {
   .main {
-    background-position: 70% 20%;
-    height: 320px;
+    min-height: 320px;
+  }
+  body.custom-background {
+    background-position: 70% 40% !important;
   }
 }
 header {
@@ -7965,17 +7963,18 @@ a.alt-link {
 a.alt-link:hover {
   color: #29406f;
 }
+#front-page article {
+  margin-top: 370px;
+}
 #front-page footer {
   text-align: right;
-}
-@media (min-width: 768px) {
-  #front-page article {
-    margin-top: 370px;
-  }
 }
 @media (max-width: 767px) {
   #front-page {
     margin-top: 20px;
+  }
+  #front-page article {
+    margin-top: 370px;
   }
   #front-page > .align-wrapper .align-base {
     position: static;
