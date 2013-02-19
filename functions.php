@@ -71,11 +71,15 @@ require ( get_template_directory() . '/inc/theme-options.php' );
 function harbour_city_scripts_styles() {
     global $wp_styles;
 
-
     /*
      * Adds JavaScript for handling the navigation menu hide-and-show behavior.
      */
-    wp_enqueue_script( 'harbour-city-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '1.0', true );
+    wp_enqueue_script( 'harbour-city-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '1.0', true );
+
+    /*
+     * Adds JavaScript for handling CSS3 selectors in older browsers.
+     */
+    wp_enqueue_script( 'selectivizr', get_template_directory_uri() . '/js/selectivizr.js', array( 'jquery' ), '1.0', true );
 
     /*
      * Loads our special font CSS file.
@@ -162,7 +166,7 @@ add_filter( 'wp_title', 'harbour_city_wp_title', 10, 2 );
 /**
  * Registers our main widget area and the front page widget areas.
  *
- * @since Twenty Twelve 1.0
+ * @since Harbour City 1.0
  */
 function harbour_city_widgets_init() {
     register_sidebar( array(
@@ -176,3 +180,13 @@ function harbour_city_widgets_init() {
     ) );
 }
 add_action( 'widgets_init', 'harbour_city_widgets_init' );
+
+/**
+ * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
+ *
+ * @since Harbour City 1.0
+ */
+function harbour_city_customize_preview_js() {
+    wp_enqueue_script( 'harbour-city-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
+}
+add_action( 'customize_preview_init', 'harbour_city_customize_preview_js' );
