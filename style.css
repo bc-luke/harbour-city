@@ -7845,6 +7845,12 @@ header {
 .menu-primary a:hover {
   color: #ffc000;
 }
+.menu-primary .current-menu-item a {
+  color: #29406f;
+}
+.menu-primary .current-menu-item a:hover {
+  color: #29406f;
+}
 .menu-primary-container .menu-toggle {
   width: 100%;
 }
@@ -7957,10 +7963,10 @@ header {
     float: right;
   }
 }
-a.alt-link {
+.alt-link {
   color: #29406f;
 }
-a.alt-link:hover {
+.alt-link:hover {
   color: #29406f;
 }
 #front-page article {
