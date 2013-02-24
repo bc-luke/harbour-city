@@ -1,0 +1,8 @@
+{
+  "name": "harbour-city",
+  "description": "The Harbour City Hoppers WordPress website theme.",
+  "author": "Luke Eller",
+  "dependencies": {
+    "less": ">= 1.3.3"
+  }
+}
