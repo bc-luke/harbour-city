@@ -8076,6 +8076,10 @@ header {
 .widget strong .text-alt {
   font-size: 185%;
 }
+.widget a {
+  color: inherit;
+  text-decoration: none;
+}
 .text-alt {
   font-family: "Abraham Lincoln Regular", Garamond, "Times New Roman", Times, serif;
 }
