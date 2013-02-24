@@ -22,7 +22,7 @@ function harbour_city_custom_header_setup() {
 	$args = array(
 		// Text color and image (empty to use none).
 		'default-text-color'     => 'fff',
-		'default-image'          => get_template_directory_uri() . '/images/headers/harbour-city-hoppers-logo.png',
+		'default-image'          => get_template_directory_uri() . '/img/headers/harbour-city-hoppers-logo.png',
 
         // Hide text by default
         'header-text'            => false,
