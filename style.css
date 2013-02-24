@@ -7792,6 +7792,26 @@ a.badge:hover {
 .text-xsmall {
   font-size: 11.200000000000001px;
 }
+.media {
+  margin: 10px;
+}
+.media,
+.bd {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}
+.media .img {
+  float: left;
+  margin-right: 10px;
+}
+.media .img img {
+  display: block;
+}
+.media .imgExt {
+  float: right;
+  margin-left: 10px;
+}
 .list-horizontal li {
   display: inline-block;
   float: left;
@@ -8001,7 +8021,7 @@ header {
   padding: 0;
 }
 .widget {
-  padding: 20px 10px;
+  padding: 5px;
   margin-top: 20px;
   min-height: 140px;
   position: relative;
@@ -8009,6 +8029,18 @@ header {
 .widget img,
 .widget i {
   float: right;
+}
+.widget .media {
+  margin: 0 5px 0;
+}
+.widget .media .bd {
+  margin-top: 10px;
+}
+.widget .media .img {
+  margin-right: 5px;
+}
+.widget .media .imgExt {
+  margin-left: 5px;
 }
 .widget:before {
   content: "";
@@ -8025,11 +8057,6 @@ header {
 .widget:first-child .widget-separator {
   display: none;
   visibility: hidden;
-}
-.widget [class^="icon-theme-sticker-"],
-.widget [class*=" icon-theme-sticker-"],
-.widget img {
-  margin-top: -5px;
 }
 @media (min-width: 1200px) {
   .widget:before {
