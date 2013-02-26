@@ -12,11 +12,11 @@ header {
  .list-horizontal();
   li {
     margin-left: 0;
+    list-style: none;
   }
 
   a {
     color: @primaryMenuLinkColor;
-
     &:hover {
       color: @primaryMenuLinkColorHover;
     }
@@ -28,7 +28,7 @@ header {
 
 .menu-primary-container {
   .menu-toggle {
-    width: 100%;
+    .btn-block;
   }
 }
 
@@ -96,6 +96,7 @@ header {
         height: 100%;
         display: inline-block;
         padding: 10px;
+        box-sizing: border-box;
       }
       
     }
