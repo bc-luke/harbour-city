@@ -7681,7 +7681,7 @@ a.badge:hover {
     min-height: 320px;
   }
   body.custom-background {
-    background-position: 70% 290px !important;
+    background-image: none !important;
   }
 }
 header {
@@ -7714,15 +7714,6 @@ header {
 }
 .menu-primary .current-menu-item a:hover {
   color: #29406f;
-}
-.menu-primary-container .menu-toggle {
-  display: block;
-  width: 100%;
-  padding-left: 0;
-  padding-right: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
 }
 .social-media {
   margin: 0 0 0 5px;
@@ -7997,23 +7988,44 @@ li.widget {
 .icon-theme-social-twitter {
   background-position: -30px -180px;
 }
-/*input[type="submit"] {
-  .btn;
-  .btn-inverse;
-}*/
 legend {
   color: #eae7db;
   margin-bottom: 0;
 }
-/*span.wpcf7-not-valid-tip {
-  background-color: @black;
-  border-color: @redTheme;
+.form-actions-simple {
+  padding-left: 0;
+  padding-right: 0;
 }
-
+.form-horizontal-simple .control-label {
+  text-align: left;
+}
+@media (max-width: 767px) {
+  form .btn {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+span.wpcf7-not-valid-tip {
+  background-color: #000000;
+  border-color: #991111;
+}
 div.wpcf7-validation-errors {
-  border-color: @yellowTheme;
+  border-color: #ffc000;
 }
-
-form p {
-  display: none;
-}*/
+.wpcf7-form-control-wrap {
+  display: block;
+}
+.wpcf7-form p {
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .wpcf7-form-control-wrap .wpcf7-not-valid-tip {
+    width: auto;
+  }
+}
