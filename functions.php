@@ -190,3 +190,9 @@ function harbour_city_customize_preview_js() {
     wp_enqueue_script( 'harbour-city-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20120827', true );
 }
 add_action( 'customize_preview_init', 'harbour_city_customize_preview_js' );
+
+add_action('wpcf7_ajax_loader', 'harbour_city_ajax_loader');
+
+function harbour_city_ajax_loader() {
+    return get_template_directory_uri() . '/img/ajax-loader.gif';
+}
