@@ -3,14 +3,17 @@ legend {
   margin-bottom: 0; // legend has a margin by default but one is also added by the adjacent sibling, so we remove it.
 }
 
-// Override the padding that's indended to align form elements with actions.
-.form-actions-simple {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-.form-horizontal-simple .control-label {
-  text-align: left
+.form-horizontal-simple {
+  // Override the padding that's indended to align form elements with actions.
+  .form-actions-simple {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .control-label {
+    text-align: left;
+  }
 }
 
 @media (max-width: 767px) {

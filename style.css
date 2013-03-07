@@ -7992,7 +7992,7 @@ legend {
   color: #eae7db;
   margin-bottom: 0;
 }
-.form-actions-simple {
+.form-horizontal-simple .form-actions-simple {
   padding-left: 0;
   padding-right: 0;
 }
