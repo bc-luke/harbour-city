@@ -13,6 +13,13 @@ legend {
   padding-right: 0;
 }
 
+// For narrow forms, use this class instead of form-horizontal to return to vertical controls early.
+@media (min-width: 980px) {
+  .form-horizontal-narrow {
+    .form-horizontal;
+  }
+}
+
 .form-horizontal-simple {
   .control-label {
     text-align: left;

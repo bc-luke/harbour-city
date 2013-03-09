@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main id="primary" class="main" role="main">
+<main id="index" class="main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
 
