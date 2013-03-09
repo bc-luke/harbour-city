@@ -38,7 +38,7 @@ function harbour_city_setup() {
      */
     add_theme_support( 'custom-background', array(
         'default-color' => '000',
-        'default-image' => get_template_directory_uri() . '/img/backgrounds/background-front.jpg',
+        'default-image' => get_template_directory_uri() . '/img/backgrounds/background-content.jpg',
     ) );
 }
 add_action( 'after_setup_theme', 'harbour_city_setup' );
