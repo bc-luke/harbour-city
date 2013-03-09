@@ -7151,7 +7151,7 @@ header {
   color: #29406f;
 }
 article {
-  min-height: 540px;
+  min-height: 550px;
 }
 #front-page article {
   min-height: inherit;
