@@ -3,22 +3,30 @@ legend {
   margin-bottom: 0; // legend has a margin by default but one is also added by the adjacent sibling, so we remove it.
 }
 
+.description {
+  margin-bottom: @baseLineHeight;
+}
+
+// Override the padding that's indended to align form elements with actions.
+.form-actions.form-actions-simple {
+  padding-left: 0;
+  padding-right: 0;
+}
 
 .form-horizontal-simple {
-  // Override the padding that's indended to align form elements with actions.
-  .form-actions-simple {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .control-label {
     text-align: left;
   }
 }
 
 @media (max-width: 767px) {
-  form .btn {
-    .btn-block;
+  form {
+    .btn {
+      .btn-block;
+    }
+    textarea, select, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] {
+      .input-block-level;
+    }
   }
 }
 
@@ -38,6 +46,9 @@ div.wpcf7-validation-errors {
 .wpcf7-form p { 
   padding: 0;
   margin: 0;
+  &.description {
+    .description;
+  }
 }
 
 @media (max-width: 767px) {

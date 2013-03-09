@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="primary" class="main" role="main">
+<main id="primary" class="main" role="main">
 
     <?php while ( have_posts() ) : the_post(); ?>
 
@@ -8,6 +8,6 @@
 
     <?php endwhile; // end of the loop. ?>
 
-</div>
+</main>
 
 <?php get_footer(); ?>
