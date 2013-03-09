@@ -8,7 +8,6 @@
   margin-top: @baseLineHeight;
   min-height: @widgetHeight;
   position: relative;
-  box-sizing: border-box;
   img, i {
     float: right;
   }
@@ -40,12 +39,6 @@
 .widget [class*=" icon-theme-sticker-"],
 .widget img {
   margin-top: -(@baseLineHeight * 0.25);
-}
-
-@media (min-width: 1200px) {
-  .widget:before {
-    left: -(@gridGutterWidth1200 / 2 + 1px);
-  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
