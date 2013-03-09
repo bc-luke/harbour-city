@@ -6992,12 +6992,6 @@ a.badge:hover {
   font-weight: normal;
   font-style: normal;
 }
-.main {
-  min-height: 525px;
-}
-#front-page {
-  min-height: 485px;
-}
 @media (min-width: 768px) and (max-width: 979px) {
   .main {
     background-size: cover;
@@ -7005,9 +6999,6 @@ a.badge:hover {
   }
 }
 @media (max-width: 767px) {
-  .main {
-    min-height: 320px;
-  }
   body.custom-background {
     background-image: none !important;
   }
@@ -7159,6 +7150,12 @@ header {
 .link-alt:hover {
   color: #29406f;
 }
+article {
+  min-height: 520px;
+}
+#front-page article {
+  min-height: inherit;
+}
 #front-page article {
   margin-top: 420px;
 }
@@ -7226,8 +7223,9 @@ li.widget {
 }
 @media (min-width: 768px) and (max-width: 979px) {
   .widget {
-    min-height: 200px;
-    padding: 10px 2px 2px 2px;
+    min-height: 160px;
+    padding-top: 10px;
+    padding-bottom: 2px;
   }
   .widget .widget-thumbnail {
     float: none;
