@@ -74,7 +74,7 @@ function harbour_city_scripts_styles() {
     /*
      * Adds JavaScript for handling the navigation menu hide-and-show behavior.
      */
-    wp_enqueue_script( 'harbour-city-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '1.0', true );
+    wp_enqueue_script( 'harbour-city-navigation', get_template_directory_uri() . '/js/navigation.js', array( 'jquery' ), '1.1', true );
 
     /*
      * Adds JavaScript for handling CSS3 selectors in older browsers.

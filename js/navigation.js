@@ -5,6 +5,6 @@
  */
 (function ($) {
     $("[data-toggle]").click(function () {
-        $("#" + $(this).data("toggle")).toggle();
+        $($(this).data("toggle")).toggle();
     });
 })(jQuery);

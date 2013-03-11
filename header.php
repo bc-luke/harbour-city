@@ -29,7 +29,7 @@
                             'theme_location' => 'primary',
                             'menu_class' => 'menu menu-primary',
                             'container_class' => 'menu-primary-container',
-                            'items_wrap' => '<button type="button" class="btn btn-inverse btn-block visible-phone menu-toggle" data-toggle="menu-primary">Menu</button><ul id="%1$s" class="%2$s">%3$s</ul>'
+                            'items_wrap' => '<button type="button" class="btn btn-inverse btn-block visible-phone menu-toggle" data-toggle=".menu-primary">Menu</button><ul id="%1$s" class="%2$s">%3$s</ul>'
                         ) ); ?>
                     </div>
                 </header>
