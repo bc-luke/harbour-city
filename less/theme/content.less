@@ -11,30 +11,33 @@
 article {
   min-height: 550px;
 }
-#front-page article {
-  min-height: inherit;
-}
 
 // Front Page
 // -------------------------
 
 #front-page {
   article {
-    margin-top: 420px;
+    min-height: inherit;
   }
   footer {
     text-align: right;
   }
 }
 
+@media (min-width: 768px) {
+  #front-page {
+    article {
+      margin-top: 420px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
+  article {
+    margin-top: 30px;
+  }
   #front-page {
     margin-top: @baseLineHeight;
-
-    article {
-      margin-top: 30px;
-    }
-
     & > .align-wrapper .align-base {
       position: static;
     }

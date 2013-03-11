@@ -7157,18 +7157,20 @@ article {
 #front-page article {
   min-height: inherit;
 }
-#front-page article {
-  margin-top: 420px;
-}
 #front-page footer {
   text-align: right;
 }
+@media (min-width: 768px) {
+  #front-page article {
+    margin-top: 420px;
+  }
+}
 @media (max-width: 767px) {
+  article {
+    margin-top: 30px;
+  }
   #front-page {
     margin-top: 20px;
-  }
-  #front-page article {
-    margin-top: 30px;
   }
   #front-page > .align-wrapper .align-base {
     position: static;
@@ -7431,6 +7433,9 @@ legend {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+  }
+  .control-group > input:first-child {
+    margin-top: 20px;
   }
 }
 span.wpcf7-not-valid-tip {
