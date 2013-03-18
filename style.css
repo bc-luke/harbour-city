@@ -7187,12 +7187,11 @@ article {
   font-size: 233%;
 }
 .widget-area {
-  margin: 0;
+  margin: 20px 0 0 0;
   padding: 0;
 }
 .widget {
   padding: 20px 0;
-  margin-top: 20px;
   min-height: 100px;
   position: relative;
 }
