@@ -7257,11 +7257,11 @@ li.widget {
   font-size: 14px;
   line-height: 1;
 }
-.widget strong {
+.widget .text-upper {
   font-size: 20.02px;
   line-height: 1;
 }
-.widget strong .text-alt {
+.widget .text-upper .text-alt {
   font-size: 185%;
 }
 .widget a {
