@@ -121,7 +121,7 @@ function harbour_city_scripts_styles() {
     /*
      * Loads our main stylesheet.
      */
-    wp_enqueue_style( 'harbour-city-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'harbour-city-style', get_stylesheet_uri(), false, '20130321' );
 
     /*
      * Loads the Internet Explorer specific stylesheet.
